@@ -1,0 +1,150 @@
+@font-face {
+    
+    font-family: 'Lovely PERSONAL USE ONLY!';
+    src: url('../fontes/Lovely\ PERSONAL\ USE\ ONLY!.woff') format('truetype');
+}
+
+.cabecalho {
+    background-color: #f9f3e7;
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+}
+
+.container {
+    background-color: #f9f3e7;
+    margin: 0 auto;
+}
+
+.container .hobbie {
+    font-family: 'Lovely PERSONAL USE ONLY!';
+    color: #3f2c1e;
+    font-size: 60px;
+    font-weight: 500px;
+    margin-bottom: 20px;
+    padding: 60px;
+    letter-spacing: 6px;
+    justify-self: center;
+}
+
+.container .filtros {
+    color: #24393A;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container .categorias-musicas {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.container label {
+    font-family: 'Chella_Bold';
+    letter-spacing: 1px;
+    font-weight: 500px;
+    color: #3f2c1e;
+
+}
+
+.container .categorias-musicas select {
+    padding: 16px 13px;
+    border-radius: 15px;
+    background-color: #3f2c1e;
+    color: white;
+    height: 52px;
+}
+
+.container select:focus,
+.container input:focus,
+.container select:focus-visible,
+.container input:focus-visible {
+    outline: none;
+}
+
+.container .categoria {
+    appearance: none;
+    background: url(../imagens/setaprabaixo.png) 97% center no-repeat;
+}
+
+.container .filtros .btn-filtrar {
+    border: none;
+    background-color: #684730;
+    color: white;
+    padding: 16px 32px;
+    font-weight: 500;
+    align-self: end;
+    width: 177px;
+    height: 52px;
+    cursor: pointer;
+    letter-spacing: 2x;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.container .filtros .btn-filtrar:hover {
+    background-color: #3f2c1e;
+}
+
+.container .musicas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.container .musicas .musica {
+    max-width: 365px;
+    background-color: #3f2c1e;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgb(0, 0, 0, 0.7);
+}
+
+.container .musica video {
+    width: 100%;
+    padding: 20px;
+}
+
+.container .musica .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #3f2c1e;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container .musica .informacoes .nome-musica {
+    font-size: 24px;
+    font-weight: 700px;
+    color: white
+}
+
+.container .musica .informacoes .categorias-musicas {
+    font-weight: 700px;
+}
+
+.rodape {
+    font-family: 'Lovely PERSONAL USE ONLY!';
+    background-color: #f9f3e7;
+    display: flex;
+    justify-content: center;
+    color: #3f2c1e;
+    padding: 30px;
+    font-size: 17px;
+}
+
+.esconder {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
