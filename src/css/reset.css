@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +6,8 @@
 
 ul {
     list-style: none;
-=======
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,5 +16,14 @@ ul {
 
 ul {
     list-style: none;
->>>>>>> 2f7408985bb76cd89871b19361ba7c846bed2394
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
 }
