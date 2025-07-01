@@ -6,52 +6,37 @@ botaoFiltrar.addEventListener('click', function () {
 
   const categoriaSelecionada = document.querySelector('#categoria').value;
 
-  const precoMaximoSelecionado = document.querySelector('#preco').value;
+  const musicas = document.querySelectorAll('.musica');
 
-  const cartas = document.querySelectorAll('.carta');
+  musicas.forEach(function (musica) {
+    const categoriaMusica = musica.dataset.categoria;
 
-  cartas.forEach(function (carta) {
-    const categoriaCarta = carta.dataset.categoria;
-    const precoDaCarta = carta.dataset.preco;
-
-    let mostrarCarta = true;
+    let mostrarMusica = true;
 
     console.log('a categoria selecionada foi: ', categoriaSelecionada);
     
 
     const temFiltroDeCategoria = categoriaSelecionada !== '';
 
-    const cartaNaoBateComFiltroDeCategoria = categoriaSelecionada.toLowerCase() !== categoriaCarta.toLowerCase();
+    const cartaNaoBateComFiltroDeCategoria = categoriaSelecionada.toLowerCase() !== categoriaMusica.toLowerCase();
 
     if (temFiltroDeCategoria && cartaNaoBateComFiltroDeCategoria) {
-      mostrarCarta = false;
+      mostrarMusica = false;
     }
 
     else {
-      mostrarCarta = true;
+      mostrarMusica = true;
     }
-
-
-    const temFiltroDePreco = precoMaximoSelecionado != "";
-    const cartaBateComFiltroDeCategoria = parseFloat(precoDaCarta) > parseFloat(precoMaximoSelecionado);
-
     
-    if(temFiltroDePreco && cartaBateComFiltroDeCategoria){
-      mostrarCarta = false;
-    }
 
-    if (precoMaximoSelecionado !== '' & parseFloat(precoDaCarta) > parseFloat(precoMaximoSelecionado)){
-      mostrarCarta = false;
-    }
-
-    if (mostrarCarta) {
-      carta.classList.add('mostrar');
-      carta.classList.remove('esconder');
+    if (mostrarMusica) {
+      musica.classList.add('mostrar');
+      musica.classList.remove('esconder');
     }
 
     else{
-      carta.classList.remove('mostrar');
-      carta.classList.add('esconder');
+      musica.classList.remove('mostrar');
+      musica.classList.add('esconder');
     }
   });
 })

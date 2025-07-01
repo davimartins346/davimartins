@@ -1,7 +1,6 @@
 @media(max-width: 1024px) {
     .container {
         padding: 20px;
-
     }
 
     .container h1 {
@@ -15,8 +14,7 @@
         gap: 16px;
     }
 
-    .container .filtros .categorias-cartas,
-    .container .filtros .preco-cartas,
+    .container .filtros .categorias-musicas,
     .container .filtros .btn-filtrar {
         width: 65%;
     }
@@ -25,14 +23,13 @@
         align-self: center;
     }
 
-    .container .cartas {
+    .container .musicas {
         justify-content: center;
     }
 }
 
 @media(max-width: 480px) {
-    .container .filtros .categorias-cartas,
-    .container .filtros .preco-cartas,
+    .container .filtros .categorias-musicas,
     .container .filtros .btn-filtrar {
         width: 100%;
     }

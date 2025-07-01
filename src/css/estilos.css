@@ -1,14 +1,131 @@
 @font-face {
-    
-    font-family: 'Lovely PERSONAL USE ONLY!';
-    src: url('../fontes/Lovely\ PERSONAL\ USE\ ONLY!.woff') format('truetype');
+
+    font-family: 'Blank Script';
+    src: url('../fontes/Blank\ Script.woff') format('truetype');
+}
+
+@font-face {
+
+    font-family: 'deco-majesty-demo.regular';
+    src: url('../fontes/deco-majesty-demo.regular.woff') format('truetype');
 }
 
 .cabecalho {
-    background-color: #f9f3e7;
+    background-color: #e7dac2;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-end;
+}
+
+img {
+    transform: translateX(80%);
+}
+
+.cabecalho .retangulo {
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.cabecalho .retangulo .text {
+    font-family: 'Blank Script';
+    font-size: 22px;
+    color: #8d6f59;
+    letter-spacing: 3px;
+    position: relative;
+    top: 100px;
+    transition: top 0.5s;
+    transform: translateX(9px);
+}
+
+.cabecalho .retangulo:hover .text {
+    top: 0;
+}
+
+.cabecalho .icones a {
+    display: inline-flex;
+    list-style: none;
+    position: relative;
+    transform: translateX(-50px);
+    color: black;
+}
+
+.cabecalho .icones .icone {
+    position: relative;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
-    padding: 1px;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 99;
+}
+
+.cabecalho .icones .icone .descricao {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(118, 199, 242, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.cabecalho .icones .icone:hover .descricao {
+    top: -35px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    background: var(--color);
+    color: white;
+}
+
+.cabecalho .icones .icone .descricao::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.cabecalho .icones .icone:hover {
+    background: var(--color);
+    color: white;
+}
+
+.cabecalho .icones .icone:hover .descricao::before {
+    background: var(--color);
+}
+
+.cabecalho .icones .icone:hover span {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.instagram {
+    --color: #e4405f;
+}
+
+.youtube {
+    --color: #cd201f;
 }
 
 .container {
@@ -17,13 +134,13 @@
 }
 
 .container .hobbie {
-    font-family: 'Lovely PERSONAL USE ONLY!';
+    font-family: 'Blank Script';
     color: #3f2c1e;
     font-size: 60px;
-    font-weight: 500px;
+    font-weight: 500;
     margin-bottom: 20px;
-    padding: 60px;
-    letter-spacing: 6px;
+    padding: 50px;
+    letter-spacing: 5px;
     justify-self: center;
 }
 
@@ -44,7 +161,7 @@
 }
 
 .container label {
-    font-family: 'Chella_Bold';
+    font-size: 25px;
     letter-spacing: 1px;
     font-weight: 500px;
     color: #3f2c1e;
@@ -57,6 +174,7 @@
     background-color: #3f2c1e;
     color: white;
     height: 52px;
+    font-size: 16px;
 }
 
 .container select:focus,
@@ -68,7 +186,7 @@
 
 .container .categoria {
     appearance: none;
-    background: url(../imagens/setaprabaixo.png) 97% center no-repeat;
+    background: url(../imagens_e_videos/setaprabaixo.png) 97% center no-repeat;
 }
 
 .container .filtros .btn-filtrar {
@@ -81,9 +199,10 @@
     width: 177px;
     height: 52px;
     cursor: pointer;
-    letter-spacing: 2x;
+    letter-spacing: 1px;
     transition: 0.3s;
     border-radius: 10px;
+    font-family:Verdana, Tahoma, sans-serif;
 }
 
 .container .filtros .btn-filtrar:hover {
@@ -104,11 +223,18 @@
     color: white;
     border-radius: 20px;
     box-shadow: 0 6px 12px rgb(0, 0, 0, 0.7);
+    height: 400px;
 }
 
 .container .musica video {
     width: 100%;
     padding: 20px;
+    box-shadow: 0 6px 12px rgb(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+video {
+    border: white;
 }
 
 .container .musica .informacoes {
@@ -132,13 +258,12 @@
 }
 
 .rodape {
-    font-family: 'Lovely PERSONAL USE ONLY!';
     background-color: #f9f3e7;
     display: flex;
     justify-content: center;
     color: #3f2c1e;
     padding: 30px;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .esconder {

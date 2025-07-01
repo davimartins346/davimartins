@@ -16,7 +16,7 @@ const botaoFiltrar = document.querySelector('.btn-filtrar'); // Criei uma variá
 
 botaoFiltrar.addEventListener('click', function () {
 
-  console.log('Você clicou no botão filtrar.'); // Para a aparecer no Inspensionamento o site
+  console.log('Você clicou no botão filtrar.'); // Para a aparecer no Inspensionamento do site
 
   // passo 3 - pegar os valores dos campos de categoria e preço
 
