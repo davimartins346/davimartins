@@ -28,21 +28,6 @@
     }
 }
 
-@media(max-width: 480px) {
-
-    img {
-        transform: translateX(30%);
-    }
-
-    .cabecalho .retangulo {
-        display: none;
-    }
-
-    .cabecalho .icones .icone {
-        transform: translateX(100%);
-    }
-}
-
 @media(max-width: 594px) {
 
     img {
