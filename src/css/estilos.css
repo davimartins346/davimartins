@@ -201,7 +201,7 @@ img {
     letter-spacing: 1px;
     transition: 0.3s;
     border-radius: 10px;
-    font-family:Verdana, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 .container .filtros .btn-filtrar:hover {
@@ -222,21 +222,16 @@ img {
     color: white;
     border-radius: 20px;
     box-shadow: 0 6px 12px rgb(0, 0, 0, 0.7);
-    height: 400px;
 }
 
 .container .musica video {
     width: 100%;
-    padding: 20px;
     box-shadow: 0 6px 12px rgb(0, 0, 0, 0.7);
     border-radius: 20px;
 }
 
-video {
-    border: white;
-}
-
 .container .musica .informacoes {
+    font-family: 'deco-majesty-demo.regular';
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -246,14 +241,11 @@ video {
     border-bottom-right-radius: 20px;
 }
 
-.container .musica .informacoes .nome-musica {
+.container .musicas .musica .informacoes {
+    font-family: 'deco-majesty-demo.regular';
     font-size: 24px;
     font-weight: 700px;
     color: white
-}
-
-.container .musica .informacoes .categorias-musicas {
-    font-weight: 700px;
 }
 
 .rodape {
