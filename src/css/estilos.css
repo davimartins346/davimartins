@@ -130,6 +130,7 @@ img {
 .container {
     background-color: #f9f3e7;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .container .hobbie {
@@ -224,28 +225,28 @@ img {
     box-shadow: 0 6px 12px rgb(0, 0, 0, 0.7);
 }
 
-.container .musica video {
+video {
     width: 100%;
     box-shadow: 0 6px 12px rgb(0, 0, 0, 0.7);
     border-radius: 20px;
 }
 
-.container .musica .informacoes {
-    font-family: 'deco-majesty-demo.regular';
+.container .informacoes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #3f2c1e;
     padding: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    position: relative;
+    top: 100px;
+    transition: top 0.3s;
 }
 
-.container .musicas .musica .informacoes {
-    font-family: 'deco-majesty-demo.regular';
-    font-size: 24px;
-    font-weight: 700px;
-    color: white
+.musica:hover .informacoes {
+    top: 0px;
 }
 
 .rodape {
@@ -255,6 +256,7 @@ img {
     color: #3f2c1e;
     padding: 30px;
     font-size: 20px;
+    overflow: hidden;
 }
 
 .esconder {
