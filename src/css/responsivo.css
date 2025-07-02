@@ -30,20 +30,15 @@
 
 @media(max-width: 480px) {
 
-    .container .filtros .categorias-musicas,
-    .container .filtros .btn-filtrar {
-        width: 100%;
-    }
-}
-
-@media(max-width: 594px) {
-
     img {
-        transform: translateX(30%) translateY(-30%);
+        transform: translateX(30%);
+    }
+
+    .cabecalho .retangulo {
+        display: none;
     }
 
     .cabecalho .icones .icone {
-        transform: translateX(250%);
-        display: flex;
+        transform: translateX(100%);
     }
 }
