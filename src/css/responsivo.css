@@ -35,3 +35,19 @@
         width: 100%;
     }
 }
+
+@media(max-width: 594px) {
+
+    img {
+        transform: translateX(30%) translateY(-30%);
+    }
+
+    .cabecalho .retangulo {
+        
+    }
+
+    .cabecalho .icones .icone {
+        transform: translateX(250%);
+        display: flex;
+    }
+}
