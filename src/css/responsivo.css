@@ -41,4 +41,8 @@
     .cabecalho .icones .icone {
         transform: translateX(100%);
     }
+
+    .cabecalho2 {
+        transform: translateX(125%) translateY(-17%);
+    }
 }
