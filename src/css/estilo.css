@@ -127,8 +127,8 @@ img {
     position: absolute;
     padding: 12px;
     display: flex;
-    transform: translateX(170%) translateY(-10%);
-    border-radius: 6px;
+    transform: translateX(170%) translateY(-17%);
+    border-radius: 10px;
 }
 
 .navegacao a {
