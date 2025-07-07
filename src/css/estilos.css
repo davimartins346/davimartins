@@ -157,7 +157,7 @@ img {
 .container .categorias-musicas {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
 }
 
 .container label {
