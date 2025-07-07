@@ -4,12 +4,6 @@
     src: url('../fontes/Blank\ Script.woff') format('truetype');
 }
 
-@font-face {
-
-    font-family: 'deco-majesty-demo.regular';
-    src: url('../fontes/deco-majesty-demo.regular.woff') format('truetype');
-}
-
 .cabecalho {
     background-color: #e7dac2;
     display: flex;
@@ -127,6 +121,41 @@ img {
     --color: #cd201f;
 }
 
+.cabecalho2 {
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #e7dac2;
+    position: absolute;
+    padding: 12px;
+    display: flex;
+    transform: translateX(170%) translateY(-10%);
+    border-radius: 6px;
+}
+
+.navegacao a {
+    position: relative;
+    color: #684730;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+.navegacao a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #f9f3e7;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+}
+
+.navegacao a:hover::after {
+    transform: scaleX(1);
+
+}
+
 .container {
     background-color: #f9f3e7;
     margin: 0 auto;
@@ -161,7 +190,7 @@ img {
 }
 
 .container label {
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 1px;
     font-weight: 500px;
     color: #3f2c1e;
