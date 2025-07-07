@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Martins - O Rei Dos Gêneros</title>
+    <link rel="icon" sizes="150x150" href="./src/imagens_e_videos/ms-icon-150x150.png" rel="stylesheet"
+        href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<link rel="stylesheet" href="./src/css/reset.css">
+<link rel="stylesheet" href="./src/css/estiloInicio.css">
+<link rel="stylesheet" href="./src/css/responsivo.css">
+
+<body>
+
+    <header class="cabecalho">
+
+        <img src="./src/imagens_e_videos/FOTO-PARA-PERFIL.png" alt="Logo_Davi_Martins" width="100" height="100">
+
+        <div class="retangulo">
+            <div class="text">
+                <h1>Bem Vindos</h1>
+            </div>
+        </div>
+
+        <ul class="icones">
+            <a href="https://www.instagram.com/_davimartins_2025/following/">
+                <li class="icone instagram">
+                    <span class="descricao">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </li>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCoDSaRUZoEFesN-adbucjEQ">
+                <li class="icone youtube">
+                    <span class="descricao">Youtube</span>
+                    <span><i class="fab fa-youtube"></i></span>
+                </li>
+            </a>
+
+        </ul>
+    </header>
+
+    <header class="cabecalho2">
+
+        <nav class="navegacao">
+            <a href="">Início</a>
+            <a href="./biografia.html">Biografia</a>
+        </nav>
+
+    </header>
+
+    <main class="container">
+
+        <h1 class="hobbie">Acústicas</h1>
+        <div class="filtros">
+            <div class="categorias-musicas">
+                <label for="categoria">Categorias</label>
+                <select id="categoria" class="categoria">
+                    <option value="">Todas</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Sertanejo">Sertanejo</option>
+                    <option value="MPB">MPB</option>
+                </select>
+            </div>
+            <button class="btn-filtrar">Aplicar</button>
+        </div>
+
+        <ul class="musicas">
+
+            <li class="musica" data-categoria="MPB">
+
+                <video src="src/imagens_e_videos/custe_o_que_custar-fagner.mp4" controls></video>
+
+                <div class="informacoes">
+                    <h2 class="nome-musica">Custe o Que Custar - Fagner</h2>
+                    <span class="categoria">Categoria: MPB</span>
+                </div>
+
+            </li>
+
+            <li class="musica" data-categoria="MPB">
+
+                <video src="src/imagens_e_videos/sufoco-alcione.mp4" controls></video>
+
+                <div class="informacoes">
+                    <h2 class="nome-musica">Sufoco - Alcione</h2>
+                    <span class="categoria">Categoria: MPB</span>
+                </div>
+
+            </li>
+
+            <li class="musica" data-categoria="Sertanejo">
+
+                <video src="src/imagens_e_videos/passaro_de_fogo-paula_fernandes.mp4" controls></video>
+
+                <div class="informacoes">
+                    <h2 class="nome-musica">Pássaro de Fogo - Paula Fernandes</h2>
+                    <span class="categoria">Categoria: Sertanejo</span>
+                </div>
+
+            </li>
+
+        </ul>
+    </main>
+
+    <footer class="rodape">- Livre para todos os públicos -</footer>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
