@@ -168,115 +168,14 @@ img {
     font-size: 60px;
     font-weight: 500;
     margin-bottom: 20px;
+    margin-top: 25px;
     padding: 50px;
     letter-spacing: 5px;
     justify-self: center;
+    transform: translateX(3%);
 }
 
-.container .filtros {
-    color: #24393A;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 32px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
-.container .categorias-musicas {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-}
-
-.container label {
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 500px;
-    color: #3f2c1e;
-
-}
-
-.container .categorias-musicas select {
-    padding: 16px 13px;
-    border-radius: 15px;
-    background-color: #3f2c1e;
-    color: white;
-    height: 52px;
-    font-size: 16px;
-}
-
-.container select:focus,
-.container input:focus,
-.container select:focus-visible,
-.container input:focus-visible {
-    outline: none;
-}
-
-.container .categoria {
-    appearance: none;
-    background: url(../imagens_e_videos/setaprabaixo.png) 97% center no-repeat;
-}
-
-.container .filtros .btn-filtrar {
-    border: none;
-    background-color: #684730;
-    color: white;
-    padding: 16px 32px;
-    font-weight: 500;
-    align-self: end;
-    width: 177px;
-    height: 52px;
-    cursor: pointer;
-    letter-spacing: 1px;
-    transition: 0.3s;
-    border-radius: 10px;
-    font-family: Verdana, Tahoma, sans-serif;
-}
-
-.container .filtros .btn-filtrar:hover {
-    background-color: #3f2c1e;
-}
-
-.container .musicas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    margin-top: 80px;
-    justify-content: center;
-}
-
-.container .musicas .musica {
-    max-width: 365px;
-    background-color: #3f2c1e;
-    color: white;
-    border-radius: 20px;
-    box-shadow: 0 6px 12px rgb(0, 0, 0, 0.7);
-}
-
-video {
-    width: 100%;
-    box-shadow: 0 6px 12px rgb(0, 0, 0, 0.7);
-    border-radius: 20px;
-}
-
-.container .informacoes {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: relative;
-    top: 100px;
-    transition: top 0.3s;
-}
-
-.musica:hover .informacoes {
-    top: 0px;
-}
 
 .rodape {
     background-color: #f9f3e7;
