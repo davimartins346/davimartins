@@ -1,7 +1,7 @@
 const botaoFiltrar = document.querySelector('.btn-filtrar');
 
 botaoFiltrar.addEventListener('click', function () {
-  
+
   console.log('clicou no botão filtrar');
 
   const categoriaSelecionada = document.querySelector('#categoria').value;
@@ -14,7 +14,7 @@ botaoFiltrar.addEventListener('click', function () {
     let mostrarMusica = true;
 
     console.log('a categoria selecionada foi: ', categoriaSelecionada);
-    
+
 
     const temFiltroDeCategoria = categoriaSelecionada !== '';
 
@@ -27,14 +27,14 @@ botaoFiltrar.addEventListener('click', function () {
     else {
       mostrarMusica = true;
     }
-    
+
 
     if (mostrarMusica) {
       musica.classList.add('mostrar');
       musica.classList.remove('esconder');
     }
 
-    else{
+    else {
       musica.classList.remove('mostrar');
       musica.classList.add('esconder');
     }
@@ -43,18 +43,18 @@ botaoFiltrar.addEventListener('click', function () {
 
 
 
+const meuObservador = new IntersectionObserver((entrar) => {
+  entrar.forEach((entre) => {
+    if (entre.isIntersecting) {
+      entre.target.classList.add('show');
+    }
+
+    else {
+      entre.target.classList.remove('show');
+    }
+  })
+})
+
 const elementos = document.querySelectorAll('.hidden');
 
-const meuObservador = new IntersectionObserver ((entrar) => {
-entrar.forEach((entre) => {
-  if(entre.isIntersecting) {
-    entre.target.classList.add('show')
-  }
-
-  else {
-    entre.target.classList.remove('show')
-  }
-})
-})
-
-elementos.forEach((elementos) => meuObservador.observe(elementos))
+elementos.forEach((elementos) => meuObservador.observe(elementos));
