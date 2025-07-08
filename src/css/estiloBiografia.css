@@ -188,6 +188,19 @@ section {
     min-height: 70vh;
 }
 
+hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+
+}
+
+show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+}
+
 .rodape {
     background-color: #f9f3e7;
     display: flex;

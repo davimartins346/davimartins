@@ -40,3 +40,21 @@ botaoFiltrar.addEventListener('click', function () {
     }
   });
 })
+
+
+
+const elementos = document.querySelectorAll('.hidden');
+
+const meuObservador = new IntersectionObserver ((entrar) => {
+entrar.forEach((entre) => {
+  if(entre.isIntersecting) {
+    entre.target.classList.add('show')
+  }
+
+  else {
+    entre.target.classList.remove('show')
+  }
+})
+})
+
+elementos.forEach((elementos) => meuObservador.observe(elementos))
