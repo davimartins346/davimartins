@@ -165,17 +165,28 @@ img {
 .container .hobbie {
     font-family: 'Blank Script';
     color: #3f2c1e;
-    font-size: 60px;
+    font-size: 90px;
     font-weight: 500;
     margin-bottom: 20px;
-    margin-top: 25px;
+    margin-top: 120px;
     padding: 50px;
     letter-spacing: 5px;
     justify-self: center;
     transform: translateX(3%);
 }
 
+p {
+    font-size: 20px;
+    border-color: #684730;
+    align-items: center;
+}
 
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 70vh;
+}
 
 .rodape {
     background-color: #f9f3e7;
