@@ -129,6 +129,7 @@ img {
     display: flex;
     transform: translateX(170%) translateY(-17%);
     border-radius: 10px;
+    z-index: 1000;
 }
 
 .navegacao a {
