@@ -176,7 +176,7 @@ img {
 }
 
 p {
-    font-size: 20px;
+    font-size: 80px;
     border-color: #684730;
     align-items: center;
 }
@@ -192,7 +192,7 @@ section {
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 2s;
 
 }
 
@@ -200,7 +200,7 @@ section {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-    transition: all 1s;
+    transition: all 2s;
 }
 
 .rodape {
