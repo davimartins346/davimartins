@@ -43,18 +43,18 @@ botaoFiltrar.addEventListener('click', function () {
 
 
 
-const meuObservador = new IntersectionObserver((entrar) => {
-  entrar.forEach((entre) => {
-    if (entre.isIntersecting) {
-      entre.target.classList.add('show');
+const myObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show')
     }
 
     else {
-      entre.target.classList.remove('show');
+      entry.target.classList.remove('show')
     }
   })
 })
 
-const elementos = document.querySelectorAll('.hidden');
+const elements = document.querySelectorAll('.hidden')
 
-elementos.forEach((elementos) => meuObservador.observe(elementos));
+elements.forEach((element) => myObserver.observe(element))
