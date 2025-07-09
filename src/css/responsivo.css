@@ -31,7 +31,22 @@
 @media(max-width: 594px) {
 
     img {
-        transform: translateX(30%);
+        transform: translateX(20%);
+    }
+
+    .cabecalho .icones .icone {
+        transform: translateX(100%);
+    }
+
+    .cabecalho .retangulo .text {
+        font-family: 'Blank Script';
+        font-size: 21px;
+        color: #8d6f59;
+        letter-spacing: 3px;
+        position: relative;
+        top: 100px;
+        transition: top 0.5s;
+        transform: translateX(16px);
     }
 
     .container .informacoes {
@@ -43,15 +58,13 @@
         padding: 20px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        top: 0;
-        transition: none;
     }
 
-    .cabecalho .icones .icone {
-        transform: translateX(100%);
+    .musica .informacoes {
+        top: 0px;
     }
 
     .cabecalho2 {
-        transform: translateX(80%) translateY(-17%);
+        transform: translateX(67%) translateY(-17%);
     }
 }

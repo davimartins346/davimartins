@@ -213,9 +213,9 @@ img {
     outline: none;
 }
 
-.container .categoria {
+.container .informacoes {
     appearance: none;
-    background: url(../imagens_e_videos/setaprabaixo.png) 97% center no-repeat;
+    background: none;
 }
 
 .container .filtros .btn-filtrar {
@@ -275,7 +275,7 @@ video {
 }
 
 .musica:hover .informacoes {
-    top: 0;
+    top: 0px;
 }
 
 .rodape {
