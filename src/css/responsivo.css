@@ -68,3 +68,14 @@
         transform: translateX(67%) translateY(-17%);
     }
 }
+
+@media(max-width: 595px) {
+
+    .cabecalho .retangulo .text {
+        display: none;
+    }
+
+    .cabecalho .icones .icone {
+        transform: translateX(40px);
+    }
+}
