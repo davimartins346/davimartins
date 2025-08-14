@@ -78,4 +78,8 @@
     .cabecalho .icones .icone {
         transform: translateX(40px);
     }
+
+    .cabecalho2{
+        transform: translateX(95px);
+    }
 }
