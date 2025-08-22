@@ -25,6 +25,18 @@ img {
     overflow: hidden;
 }
 
+.hobbie {
+    font-family: 'Blank Script';
+    color: #3f2c1e;
+    font-size: 90px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    padding: 50px;
+    letter-spacing: 5px;
+    justify-self: center;
+}
+
 .cabecalho .retangulo .text {
     font-family: 'Blank Script';
     font-size: 22px;
@@ -163,18 +175,6 @@ img {
     overflow: hidden;
 }
 
-.container .hobbie {
-    font-family: 'Blank Script';
-    color: #3f2c1e;
-    font-size: 90px;
-    font-weight: 500;
-    margin-bottom: 30px;
-    margin-top: 60px;
-    padding: 50px;
-    letter-spacing: 5px;
-    justify-self: center;
-}
-
 section.slider {
     margin: auto;
     width: 100%;
@@ -200,18 +200,64 @@ section.slider {
     text-align: center;
 }
 
-.nav-manual {
+.nav-manual, .nav-auto {
+    position: absolute;
     width: 100%;
-    margin-top: 35%;
+    margin-top: 35px;
     display: flex;
     justify-content: center;
 }
 
-.nav-manual .manual-btn {
+.nav-manual .manual-btn, .nav-auto div{
     border: 1px solid #3f2c1e;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #3f2c1e;
+}
+
+.nav-auto p {
+    max-width: 700px;
+    background-color: #5c4331;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgb(0, 0, 0, 1);
+    font-size: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.rodape {
+    background-color: #f9f3e7;
+    display: flex;
+    justify-content: center;
+    color: #3f2c1e;
+    padding: 30px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.esconder {
+    display: none;
+}
+
+.mostrar {
+    display: block;
 }
 
 p {
@@ -230,21 +276,6 @@ section {
     place-items: center;
     align-items: center;
     min-height: 70vh;
-}
-
-.hidden {
-    opacity: 0;
-    filter: blur(15px);
-    transform: translateX(-100%);
-    transition: all 1.2s;
-
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-    transition: all 1.2s;
 }
 
 .rodape {
