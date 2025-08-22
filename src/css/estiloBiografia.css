@@ -175,76 +175,7 @@ img {
     overflow: hidden;
 }
 
-section.slider {
-    margin: auto;
-    width: 100%;
-    height: auto;
-    padding: 0 !important;
-    overflow: hidden;
-}
 
-.slider-content {
-    width: 400%;
-    display: flex;
-    margin-top: 4%;
-    transform: translateX(11%);
-}
-
-.slider-content input {
-    display: none;
-}
-
-.slide-box {
-    width: 25%;
-    height: auto;
-    position: relative;
-    text-align: center;
-}
-
-.nav-manual,
-.nav-auto {
-    position: absolute;
-    width: 100%;
-    margin-top: 35px;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-manual .manual-btn,
-.nav-auto div {
-    border: 1px solid #3f2c1e;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.nav-manual .manual-btn:not(:last-child),
-.nav-auto div:not(:last-child) {
-    margin-right: 10px;
-}
-
-.nav-manual .manual-btn:hover {
-    background-color: #3f2c1e;
-}
-
-.nav-auto p {
-    max-width: 700px;
-    background-color: #5c4331;
-    color: white;
-    border-radius: 20px;
-    box-shadow: 0 6px 12px rgb(0, 0, 0, 1);
-    font-size: 20px;
-    padding: 40px;
-    text-align: center;
-}
-
-section {
-    display: grid;
-    place-items: center;
-    align-items: center;
-    min-height: 70vh;
-}
 
 .rodape {
     background-color: #f9f3e7;
