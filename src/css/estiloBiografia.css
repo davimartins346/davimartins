@@ -185,8 +185,9 @@ section.slider {
 
 .slider-content {
     width: 400%;
-    height: auto;
     display: flex;
+    margin-top: 4%;
+    transform: translateX(11%);
 }
 
 .slider-content input {
@@ -200,7 +201,8 @@ section.slider {
     text-align: center;
 }
 
-.nav-manual, .nav-auto {
+.nav-manual,
+.nav-auto {
     position: absolute;
     width: 100%;
     margin-top: 35px;
@@ -208,7 +210,8 @@ section.slider {
     justify-content: center;
 }
 
-.nav-manual .manual-btn, .nav-auto div{
+.nav-manual .manual-btn,
+.nav-auto div {
     border: 1px solid #3f2c1e;
     padding: 10px;
     border-radius: 50%;
@@ -216,7 +219,8 @@ section.slider {
     transition: 0.2s;
 }
 
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
     margin-right: 10px;
 }
 
