@@ -7,7 +7,6 @@ botaoFiltrar.addEventListener('click', function () {
   const categoriaSelecionada = document.querySelector('#categoria').value;
   const musicas = document.querySelectorAll('.musica');
 
-<<<<<<< HEAD
   musicas.forEach(function (musica) {
     const categoriaMusica = musica.dataset.categoria;
 
@@ -40,10 +39,9 @@ botaoFiltrar.addEventListener('click', function () {
     }
   });
 })
+  
   const precoMaximoSelecionado = document.querySelector('#preco').value;
-=======
   const musicas = document.querySelectorAll('.musica');
->>>>>>> 686a824 (alterei a cor)
 
   musicas.forEach(function (musica) {
     const categoriaMusica = musica.dataset.categoria;
