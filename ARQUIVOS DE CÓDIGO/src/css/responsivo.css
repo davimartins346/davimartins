@@ -25,14 +25,15 @@
     .container .filtros .btn-filtrar {
         align-self: center;
     }
+
     .container .musicas
     .container .cartas 
-    .container .musicas
-    justify-content: center;
+    .container .musicas {
+    
+        justify-content: center;
     }
 }
 
-<<<<<<< HEAD
 @media(max-width: 700px) {
 
     img {
@@ -86,11 +87,12 @@
 
     .cabecalho2{
         transform: translateX(95px);
-=======
+    }
+}
+
 @media(max-width: 480px) {
     .container .filtros .categorias-musicas,
     .container .filtros .btn-filtrar {
         width: 100%;
->>>>>>> 2cadcba (index.html)
     }
 }
