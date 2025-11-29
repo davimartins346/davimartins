@@ -1,0 +1,98 @@
+@media(max-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container .filtros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .container .filtros .categorias-musicas,
+    .container .filtros .categorias-cartas,
+    .container .filtros .preco-cartas,
+    .container .filtros .categorias-musicas,
+    .container .filtros .btn-filtrar {
+        width: 65%;
+    }
+
+    .container .filtros .btn-filtrar {
+        align-self: center;
+    }
+
+    .container .musicas
+    .container .cartas 
+    .container .musicas {
+    
+        justify-content: center;
+    }
+}
+
+@media(max-width: 700px) {
+
+    img {
+        transform: translateX(20%);
+    }
+
+    .cabecalho .icones .icone {
+        transform: translateX(100%);
+    }
+
+    .cabecalho .retangulo .text {
+        font-family: 'Blank Script';
+        font-size: 21px;
+        color: #8d6f59;
+        letter-spacing: 3px;
+        position: relative;
+        top: 100px;
+        transition: top 0.5s;
+        transform: translateX(16px);
+    }
+
+    .container .informacoes {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .musica .informacoes {
+        top: 0px;
+    }
+
+    .cabecalho2 {
+        transform: translateX(67%) translateY(-17%);
+    }
+}
+
+@media(max-width: 595px) {
+
+    .cabecalho .retangulo .text {
+        display: none;
+    }
+
+    .cabecalho .icones .icone {
+        transform: translateX(40px);
+    }
+
+    .cabecalho2{
+        transform: translateX(95px);
+    }
+}
+
+@media(max-width: 480px) {
+    .container .filtros .categorias-musicas,
+    .container .filtros .btn-filtrar {
+        width: 100%;
+    }
+}
