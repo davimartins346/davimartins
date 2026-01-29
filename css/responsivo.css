@@ -1,7 +1,15 @@
 @media(max-width: 1024px) {
 
+    .cabecalho {
+        background-color: #e7dac2;
+        display: flex;
+        justify-content: space-between;
+        padding: 70px;
+        align-items: flex-end;
+    }
+
     .cabecalho img {
-        transform: translateX(25%);
+        transform: translateX(85%) translateY(-50%);
     }
 
     .cabecalho .retangulo .text {
@@ -9,7 +17,8 @@
     }
 
     .cabecalho .icones .icone {
-        transform: translateX(100%);
+        transform: translateX(0%) translateY(150%);
+        position:relative;
         width: 20px;
         height: 20px;
         object-fit: contain;
