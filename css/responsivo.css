@@ -1,0 +1,15 @@
+@media(max-width: 1024px) {
+
+    .cabecalho img {
+        transform: translateX(25%);
+    }
+
+    .cabecalho .retangulo .text {
+        display: none !important;
+    }
+
+    .cabecalho .icones .icone {
+        transform: translateX(100%);
+    }
+
+}
