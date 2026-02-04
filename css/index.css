@@ -33,7 +33,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin-left: 50px;
+    margin-left: 165px;
     margin-bottom: 10px;
 }
 
@@ -126,6 +126,10 @@
     --color: #cd201f;
 }
 
+.tiktok {
+  --color: #010101;
+}
+
 .cabecalho2 {
     font-family: Verdana, Tahoma, sans-serif;
     background-color: #e7dac2;
@@ -143,7 +147,7 @@
     position: relative;
     color: #684730;
     text-decoration: none;
-    margin-left: 12px;
+    margin-left: 14px;
 }
 
 .navegacao a::after {
